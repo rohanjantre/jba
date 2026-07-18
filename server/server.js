@@ -1,3 +1,12 @@
+const dns = require("dns");
+
+dns.setServers([
+  "8.8.8.8",
+  "1.1.1.1"
+]);
+
+require("dotenv").config();
+
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
@@ -8,6 +17,7 @@ const jobRoutes = require("./routes/jobRoutes");
 const applicationRoutes = require("./routes/applicationRoutes");
 
 const app = express();
+
 
 // Connect to MongoDB
 connectDB();
