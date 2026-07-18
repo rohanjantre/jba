@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: #FAF7F0;
+  color: #1B1F27;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+::selection {
+  background-color: #D89A1F;
+  color: #1B1F27;
+}
+
+.font-display {
+  font-family: "Fraunces", serif;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* Ledger-stamp status badge, the signature visual motif */
+.stamp {
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: dashed;
+  display: inline-block;
+}
+
+*:focus-visible {
+  outline: 2px solid #0F5C55;
+  outline-offset: 2px;
+}
